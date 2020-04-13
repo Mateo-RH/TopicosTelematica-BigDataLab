@@ -22,10 +22,10 @@ hdfs dfs –copyFromLocal datasets/* /user/marami26/datasets/
 
 **Resultados**
 * Terminal
-![terminal](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/imagenes/dca/terminal.png)
+![terminal](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/dca/terminal.png)
 
 * Ambari
-![ambari](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/imagenes/dca/ambari.png)
+![ambari](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/dca/ambari.png)
 
 ## Welcome to GitHub Pages
 

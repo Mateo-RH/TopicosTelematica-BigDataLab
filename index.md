@@ -1,3 +1,32 @@
+## EMR en el DCA
+
+1. Descargar _dataset_ del repositorio y comprimirlo
+```
+git clone https://github.com/st0263eafit/bigdata.git 
+cd bigdata/datasets && zip –r dataset * 
+```
+2. Copiar el _dataset_ al **DCA** y descomprimirlo en una carpeta
+```
+scp dataset.zip marami26@192.168.10.116:/home/marami26/dataset.zip 
+ssh marami26@192.168.10.116 
+mkdir datasets && unzip dataset.zip -d datasets 
+```
+3. Crear carpeta para almacenar los datasets en mi directorio de **HDFS**
+```
+hdfs dfs -mkdir /user/marami26/datasets 
+```
+4. Copiar el _dataset_ del **DCA** al directorio de **HDFS**
+```
+hdfs dfs –copyFromLocal datasets/* /user/marami26/datasets/ 
+```
+
+**Resultados**
+* Terminal
+![terminal](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/dca/terminal.png)
+
+* Ambari
+![ambari](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/dca/ambari.png)
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/edit/master/index.md) to maintain and preview the content for your website in Markdown files.

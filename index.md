@@ -117,3 +117,36 @@ aws emr terminate-clusters --cluster-ids <clusterID>
 2. Con Map Reduce
 
 ![conMapReduce.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/local/conMapReduce.JPG)
+
+## Ejercicio 1
+
+1. El salario promedio por Sector Económico (SE)
+
+**codigo**
+
+![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto1.JPG)
+
+**resultado**
+
+![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto1_res.JPG)
+
+2. El salario promedio por Empleado
+
+**codigo**
+
+![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto2.JPG)
+
+**resultado**
+
+![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto2_res.JPG)
+
+3. Número de SE por Empleado que ha tenido a lo largo de la estadística
+
+**codigo**
+
+![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto3.JPG)
+
+**resultado**
+
+![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto3_res.JPG)
+

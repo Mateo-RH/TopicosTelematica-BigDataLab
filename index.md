@@ -22,16 +22,16 @@ hdfs dfs –copyFromLocal datasets/* /user/marami26/datasets/
 
 **Resultados**
 * Terminal
-![terminal](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/dca/terminal.png)
+![terminal](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/dca/terminal.png?raw=true)
 
 * Ambari
-![ambari](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/dca/ambari.png)
+![ambari](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/dca/ambari.png?raw=true)
 
 ## S3
 Se crea un bucket en AWS S3 y se configura desbloqueando el acceso publico.
 Tambien se debe de dar permisos de lectura publica a la carpeta _datasets_.
 
-![s3](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/s3/bigdata-s3.JPG)
+![s3](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/s3/bigdata-s3.JPG?raw=true)
 
 ## AWS EMR
 
@@ -45,19 +45,19 @@ Tambien se debe de dar permisos de lectura publica a la carpeta _datasets_.
  * **Livy:** Es un servicio que permite la facil comunicacion con un Cluster de _Spark_ a traves de una interfaz _REST_
  * **Tez:** Marco para aplicaciones de procesamiento de datos basadas en YARN en Hadoop
  
-![creacionCluster.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/creacionCluster.JPG)
+![creacionCluster.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/creacionCluster.JPG?raw=true)
 
 2. Habilitamos el acceso publico pero restringimos los puertos 8888 y 8890 que seran utilizados para _Hue_ y _Zeppelin_
 
-![publicAccess.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/publicAccess.JPG)
+![publicAccess.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/publicAccess.JPG?raw=true)
 
 3. Configuramos el grupo de seguridad del master para exponer los puertos 8888 y 8890
 
-![secGroups.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/secGroups.JPG)
+![secGroups.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/secGroups.JPG?raw=true)
 
 4. Para poder clonar este cluster damos click en la opcion _Exportación de la CLI de AWS_
 
-![recreacion.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/recreacion.JPG)
+![recreacion.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/recreacion.JPG?raw=true)
 
 5. Recreacion del cluster con AWS CLI
 ```
@@ -72,13 +72,13 @@ aws emr terminate-clusters --cluster-ids <clusterID>
 **Resultados**
 
 * **Hue**
-![hue.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/hue.JPG)
+![hue.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/hue.JPG?raw=true)
 
 * **Zeppelin**
-![zeppelin.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/zeppelin.JPG)
+![zeppelin.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/zeppelin.JPG?raw=true)
 
 * **SSH**
-![ssh-conection.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/ssh-conection.JPG)
+![ssh-conection.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/cluster/ssh-conection.JPG?raw=true)
 
 ## Hue
 
@@ -86,37 +86,37 @@ aws emr terminate-clusters --cluster-ids <clusterID>
 
 1. En el menu hamburguesa de arriba a la izquierda seleccionamos _Files_
 
-![hdf1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/hue/hdf1.JPG)
+![hdf1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/hue/hdf1.JPG?raw=true)
 
 2. Ahora seleccionamos _Upload_ y subimos el _dataset_
 
-![hdfs2.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/hue/hdfs2.JPG)
+![hdfs2.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/hue/hdfs2.JPG?raw=true)
 
-![hdfs3.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/hue/hdfs3.JPG)
+![hdfs3.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/hue/hdfs3.JPG?raw=true)
 
 #### S3
 
 1. En el menu hamburguesa de arriba a la izquiera seleccionamos _S3_
 
-![s31.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/s3/s31.JPG)
+![s31.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/s3/s31.JPG?raw=true)
 
 2. A continuacion veremos los _Buckets_ de S3 que poseemos en la cuenta
 
-![s32.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/s3/s32.JPG)
+![s32.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/s3/s32.JPG?raw=true)
 
 3. Al seleccionar el Bucket creado previamente, tendremos acceso a el dataset que cargamos alli.
 
-![s33.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/s3/s33.JPG)
+![s33.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/s3/s33.JPG?raw=true)
 
 ## Word-Count Local
 
 1. Sin Map Reduce
 
-![sinMapReduce.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/local/sinMapReduce.JPG)
+![sinMapReduce.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/local/sinMapReduce.JPG?raw=true)
 
 2. Con Map Reduce
 
-![conMapReduce.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/local/conMapReduce.JPG)
+![conMapReduce.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/local/conMapReduce.JPG?raw=true)
 
 ## Ejercicio 1
 
@@ -124,29 +124,29 @@ aws emr terminate-clusters --cluster-ids <clusterID>
 
 **codigo**
 
-![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto1.JPG)
+![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto1.JPG?raw=true)
 
 **resultado**
 
-![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto1_res.JPG)
+![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto1_res.JPG?raw=true)
 
 2. El salario promedio por Empleado
 
 **codigo**
 
-![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto2.JPG)
+![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto2.JPG?raw=true)
 
 **resultado**
 
-![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto2_res.JPG)
+![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto2_res.JPG?raw=true)
 
 3. Número de SE por Empleado que ha tenido a lo largo de la estadística
 
 **codigo**
 
-![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto3.JPG)
+![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto3.JPG?raw=true)
 
 **resultado**
 
-![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto3_res.JPG)
+![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto3_res.JPG?raw=true)
 

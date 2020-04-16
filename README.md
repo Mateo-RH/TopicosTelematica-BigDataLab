@@ -34,7 +34,8 @@ Tambien se debe de dar permisos de lectura publica a la carpeta _datasets_.
 
 ![s3](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/s3/bigdata-s3.JPG)
 
-# Laboratorio EMR
+# Laboratorio Map/Reduce
+
 ## AWS EMR
 
 1. Creamos un cluster en EMR solicitando los siguientes componentes
@@ -110,7 +111,6 @@ aws emr terminate-clusters --cluster-ids <clusterID>
 
 ![s33.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/s3/s33.JPG)
 
-# Laboratorio Map/Reduce
 ## Word-Count Local
 
 1. Sin Map Reduce

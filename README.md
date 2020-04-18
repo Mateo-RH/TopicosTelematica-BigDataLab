@@ -113,6 +113,11 @@ aws emr terminate-clusters --cluster-ids <clusterID>
 
 ## MyPC
 
+Para ejecutar el [wordcount-local.py](https://github.com/st0263eafit/bigdata/blob/master/02-mapreduce/wordcount-local.py) y [wordcount-mr.py](https://github.com/st0263eafit/bigdata/blob/master/02-mapreduce/wordcount-mr.py) en mi computador primero instale Python, pip y mrjob.
+1. [Instalacion de python](https://github.com/BurntSushi/nfldb/wiki/Python-&-pip-Windows-installation)
+2. Despues de instalar python y pip, ejecutar la siguiente instruccion en la terminal: ``` pip install mrjob``` 
+
+**Corriendo el wordcount**
 ![pc.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/pc.JPG)
 
 **Output Files**
@@ -121,6 +126,9 @@ aws emr terminate-clusters --cluster-ids <clusterID>
 
 ## DCA/Jupyter
 
+El DCA ya tenia las herramientas neesarias para realizar el ejercicio, por lo que solo fue necesario conectarme y ejecutar los scripts en una terminal de jupyter
+
+**Corriendo el wordcount**
 1. Sin Map Reduce
 
 ![sinMapReduce.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/local/sinMapReduce.JPG)
@@ -131,6 +139,13 @@ aws emr terminate-clusters --cluster-ids <clusterID>
 
 ## EMR
 
+Para realizar el mismo ejercicio en el EMR de aws, primero fue necesario completar los siguientes pasos:
+1. conectarme al nodo master del cluster: ```ssh -i "cluster.pem" hadoop@ec2-18-212-42-209.compute-1.amazonaws.com```
+2. instalar git: ```sudo yum install -y git```
+3. descargar el repositorio ``` git clone https://github.com/st0263eafit/bigdata.git ```
+3. instalar mrjob: ```sudo pip install mrjob```
+
+**Corriendo el wordcount**
 1. Sin Map Reduce
 
 ![emr-local.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/emr-local.JPG)

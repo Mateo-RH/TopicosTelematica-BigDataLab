@@ -1,4 +1,4 @@
-# Laboratorio HDFS
+# 1. Laboratorio HDFS
 ## EMR en el DCA
 
 1. Descargar _dataset_ del repositorio y comprimirlo
@@ -109,9 +109,17 @@ aws emr terminate-clusters --cluster-ids <clusterID>
 
 ![s33.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/s3/s33.JPG)
 
-# Laboratorio Map/Reduce
+# 2. Laboratorio Map/Reduce
 
-## Word-Count Local
+## MyPC
+
+![pc.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/pc.JPG)
+
+**Output Files**
+* [local](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/wordcount-local-output.txt)
+* [mr](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/wordcount-mr-output.txt)
+
+## DCA/Jupyter
 
 1. Sin Map Reduce
 
@@ -120,6 +128,16 @@ aws emr terminate-clusters --cluster-ids <clusterID>
 2. Con Map Reduce
 
 ![conMapReduce.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/local/conMapReduce.JPG)
+
+## EMR
+
+1. Sin Map Reduce
+
+![emr-local.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/emr-local.JPG)
+
+2. Con Map Reduce
+
+![emr-mr.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/emr-mr.JPG)
 
 ## Ejercicio 1
 

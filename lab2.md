@@ -74,3 +74,5 @@ Para realizar el mismo ejercicio en el EMR de aws, primero fue necesario complet
 **resultado**
 
 ![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto3_res.JPG?raw=true)
+
+[volver](index.md)

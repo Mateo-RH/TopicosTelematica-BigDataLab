@@ -13,7 +13,7 @@ El siguiente query realiza un join entre las tablas _EXPO_ y _HDI_
 
 ![joinExpoHdi.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/savedQuerys/joinExpoHdi.JPG?raw=true)
 
-[Output](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/documentos/join_expo_hdi.csv)
+[Output](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/tree/master/documentos/join_expo_hdi.csv)
 
 ### Wordcount con Hive
 
@@ -23,13 +23,13 @@ Ahora realizaremos el ejercicio del wordcount, primero por palabra y luego por f
 
 ![docsWordOrder.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/savedQuerys/docsWordOrder.JPG?raw=true)
 
-[Output](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/documentos/docs-wordcound-wordOrder.csv)
+[Output](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/tree/master/documentos/docs-wordcound-wordOrder.csv)
 
 **ordenado por frequencia de menor a mayor**
 
 ![docsFrequency.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/savedQuerys/docsFrequency.JPG?raw=true)
 
-[Output](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/documentos/docs-wordcount-frequencyOrder.csv)
+[Output](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/tree/master/documentos/docs-wordcount-frequencyOrder.csv)
 
 ### Reto
 

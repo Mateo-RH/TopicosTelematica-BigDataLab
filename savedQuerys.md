@@ -34,7 +34,7 @@
 
 ![evidencia3](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/lab3/evidencia3.JPG?raw=true)
 
-3. [archivo descargado de hdi](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/documentos/hdi-data.csv)
+3. [archivo descargado de hdi](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/tree/master/documentos/hdi-data.csv)
 
 
 

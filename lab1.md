@@ -108,3 +108,6 @@ aws emr terminate-clusters --cluster-ids <clusterID>
 3. Al seleccionar el Bucket creado previamente, tendremos acceso a el dataset que cargamos alli.
 
 ![s33.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/s3/s33.JPG?raw=true)
+
+
+[volver](index.md)

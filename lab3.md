@@ -1,76 +1,49 @@
-# 2. Laboratorio Map/Reduce
+# 3. Hive y Sqoop
 
-## MyPC
+## Hive
 
-Para ejecutar el [wordcount-local.py](https://github.com/st0263eafit/bigdata/blob/master/02-mapreduce/wordcount-local.py) y [wordcount-mr.py](https://github.com/st0263eafit/bigdata/blob/master/02-mapreduce/wordcount-mr.py) en mi computador primero instale Python, pip y mrjob.
-1. [Instalacion de python](https://github.com/BurntSushi/nfldb/wiki/Python-&-pip-Windows-installation)
-2. Despues de instalar python y pip, ejecutar la siguiente instruccion en la terminal: ``` pip install mrjob``` 
+Para realizar los ejercicios de hive se utilizan una serie de scripts SQL para la creacion de la base de datos y posteriormente las tablas y aprovisionamiento de estas.
+todos estos querys los almacene y les saque un screenshot que encontraran a continuacion con su respectiva descripcion.
 
-**Corriendo el wordcount**
-![pc.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/pc.JPG?raw=true)
+[Saved Querys](savedQuerys.md)
 
-**Output Files**
-* [local](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/wordcount-local-output.txt)
-* [mr](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/wordcount-mr-output.txt)
+### Join con Hive
 
-## DCA/Jupyter
+El siguiente query realiza un join entre las tablas _EXPO_ y _HDI_
 
-El DCA ya tenia las herramientas neesarias para realizar el ejercicio, por lo que solo fue necesario conectarme y ejecutar los scripts en una terminal de jupyter
+![joinExpoHdi.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/savedQuerys/joinExpoHdi.JPG?raw=true)
 
-**Corriendo el wordcount**
-1. Sin Map Reduce
+[Output](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/queryOutputs/join_expo_hdi.csv)
 
-![sinMapReduce.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/local/sinMapReduce.JPG?raw=true)
+### Wordcount con Hive
 
-2. Con Map Reduce
+Ahora realizaremos el ejercicio del wordcount, primero por palabra y luego por frequencia.
 
-![conMapReduce.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/local/conMapReduce.JPG?raw=true)
+**ordenado por palabra**
 
-## EMR
+![docsWordOrder.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/savedQuerys/docsWordOrder.JPG?raw=true)
 
-Para realizar el mismo ejercicio en el EMR de aws, primero fue necesario completar los siguientes pasos:
-1. conectarme al nodo master del cluster: ```ssh -i "cluster.pem" hadoop@ec2-18-212-42-209.compute-1.amazonaws.com```
-2. instalar git: ```sudo yum install -y git```
-3. descargar el repositorio ``` git clone https://github.com/st0263eafit/bigdata.git ```
-3. instalar mrjob: ```sudo pip install mrjob```
+[Output](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/queryOutputs/docs-wordcound-wordOrder.csv)
 
-**Corriendo el wordcount**
-1. Sin Map Reduce
+**ordenado por frequencia de menor a mayor**
 
-![emr-local.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/emr-local.JPG?raw=true)
+![docsFrequency.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/savedQuerys/docsFrequency.JPG?raw=true)
 
-2. Con Map Reduce
+[Output](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/queryOutputs/docs-wordcount-frequencyOrder.csv)
 
-![emr-mr.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/emr-mr.JPG?raw=true)
+### Reto
 
-## Ejercicio 1
+## Sqoop
 
-1. El salario promedio por Sector Económico (SE)
+Para esta parte del laboratorio es necesario primero crear una base de datos MySQL en _AWS RDS_ y alli crear una serie de tablas y aprovisionarlas.
 
-**codigo**
+para conectarme a la base de datos utilice una instancia _EC2_ donde instale _mysql_.
+A continuacion la instalaion de mysql, conexion con rds y creacion/aprovisionamiento de _cursodb_
 
-![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto1.JPG?raw=true)
+![cursodb](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/lab3/cursodb.png?raw=true)
 
-**resultado**
+Tambien es necesario realizar la siguiente configuracion para poder utilizar los comandos de Sqoop desde Hue
 
-![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto1_res.JPG?raw=true)
+![sqoopConfiguracion](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/lab3/configuracion_sqoop.png?raw=true)
 
-2. El salario promedio por Empleado
-
-**codigo**
-
-![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto2.JPG?raw=true)
-
-**resultado**
-
-![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto2_res.JPG?raw=true)
-
-3. Número de SE por Empleado que ha tenido a lo largo de la estadística
-
-**codigo**
-
-![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto3.JPG?raw=true)
-
-**resultado**
-
-![punto1.JPG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/labs/punto3_res.JPG?raw=true)
+[volver](index.md)

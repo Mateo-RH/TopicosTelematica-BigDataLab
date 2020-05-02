@@ -89,7 +89,7 @@ create database retail_db;
 sqoop import-all-tables --connect jdbc:mysql://mysqldb.cavef8jzeaek.us-east-1.rds.amazonaws.com:3306/retail_db --username=retail_dba --password=retail_dba --hive-database retail_db --hive-overwrite --hive-import --warehouse-dir=/tmp/retail_dbtmp -m 1 --mysql-delimiters
 ```
 
---imagen 2 --
+![caseRetailDB1.PNG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/lab3/caseRetailDB1.PNG?raw=true)
 
 * Obtener categorias mas populares de productos
 ```
@@ -102,7 +102,7 @@ order by count desc
 limit 10
 ```
 
---salida1 --
+[Output](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/tree/master/documentos/caseRetailDBOutput1.xlsx)
 
 * Obtener top 10 de productos que generan ganancias
 ```
@@ -119,7 +119,7 @@ order by r.revenue desc
 limit 10
 ```
 
---salida2 --
+[Output](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/tree/master/documentos/caseRetailDBOutput2.xlsx)
 
 * Subo los logs al HDFS
 ```
@@ -163,11 +163,11 @@ hdfs dfs -mkdir /user/admin/warehouse/access_logs_etl
 
 * Directorios creados en hdfs
 
---imagen--
+![caseRetailDB3.PNG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/lab3/caseRetailDB3.PNG?raw=true)
 
 * Evidencias de Querys
 
---imagen
+![caseRetailDB2.PNG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/lab3/caseRetailDB2.PNG?raw=true)
 
 
 

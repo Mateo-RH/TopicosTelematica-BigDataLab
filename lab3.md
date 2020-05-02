@@ -77,4 +77,98 @@ sqoop import-all-tables --connect jdbc:mysql://mysqldb.cavef8jzeaek.us-east-1.rd
 ```
 Lo unico que se debe tener en cuenta para estos comandos es cambiar el link de la base de datos mysql que se esta utilizando.
 
+### Case retal DB
+
+* Primero creo la base de datos retail_db en hive
+```
+create database retail_db;
+```
+
+* Luego importo los datos de mysql via sqoop
+```
+sqoop import-all-tables --connect jdbc:mysql://mysqldb.cavef8jzeaek.us-east-1.rds.amazonaws.com:3306/retail_db --username=retail_dba --password=retail_dba --hive-database retail_db --hive-overwrite --hive-import --warehouse-dir=/tmp/retail_dbtmp -m 1 --mysql-delimiters
+```
+
+--imagen 2 --
+
+* Obtener categorias mas populares de productos
+```
+SELECT c.category_name, count(order_item_quantity) as count
+FROM order_items oi
+inner join products p on oi.order_item_product_id = p.product_id
+inner join categories c on c.category_id = p.product_category_id
+group by c.category_name
+order by count desc
+limit 10
+```
+
+--salida1 --
+
+* Obtener top 10 de productos que generan ganancias
+```
+SELECT p.product_id, p.product_name, r.revenue
+FROM products p inner join
+(select oi.order_item_product_id, sum(cast(oi.order_item_subtotal as float)) as revenue
+from order_items oi inner join orders o
+on oi.order_item_order_id = o.order_id
+where o.order_status <> 'CANCELED'
+and o.order_status <> 'SUSPECTED_FRAUD'
+group by order_item_product_id) r
+on p.product_id = r.order_item_product_id
+order by r.revenue desc
+limit 10
+```
+
+--salida2 --
+
+* Subo los logs al HDFS
+```
+hdfs dfs -put datasets/retail_logs/access.log /user/admin/datasets/retail_logs/
+
+USE admin;
+CREATE EXTERNAL TABLE tmp_access_logs (
+        ip STRING,
+        fecha STRING,
+        method STRING,
+        url STRING,
+        http_version STRING,
+        code1 STRING,
+        code2 STRING,
+        dash STRING,
+        user_agent STRING)
+    ROW FORMAT SERDE 'org.apache.hadoop.hive.contrib.serde2.RegexSerDe'
+    WITH SERDEPROPERTIES (
+        'input.regex' = '([^ ]*) - - \\[([^\\]]*)\\] "([^\ ]*) ([^\ ]*) ([^\ ]*)" (\\d*) (\\d*) "([^"]*)" "([^"]*)"',
+        'output.format.string' = "%1$$s %2$$s %3$$s %4$$s %5$$s %6$$s %7$$s %8$$s %9$$s")
+    LOCATION '/user/admin/datasets/retail_logs/';
+
+hdfs dfs -mkdir /user/admin/warehouse/access_logs_etl
+```
+
+* Creo directorio para la tabla externa con _ETL_
+```
+    CREATE EXTERNAL TABLE etl_access_logs (
+        ip STRING,
+        fecha STRING,
+        method STRING,
+        url STRING,
+        http_version STRING,
+        code1 STRING,
+        code2 STRING,
+        dash STRING,
+        user_agent STRING)
+    ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+    LOCATION '/user/admin/warehouse/access_logs_etl/';
+```
+
+* Directorios creados en hdfs
+
+--imagen--
+
+* Evidencias de Querys
+
+--imagen
+
+
+
 [volver](index.md)

@@ -1,7 +1,9 @@
 # Proyecto big data
 
 ## Autores
-![fantasma](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/imagenes/trabajo3/sexyFantasma.jpg?raw=true)
+![fantasma](https://raw.githubusercontent.com/Mateo-RH/TopicosTelematica-BigDataLab/master/imagenes/trabajo3/sexyFantasma.jpg)
+
+_Juan camilo echeverri salazar_
 
 ### Descripción
 

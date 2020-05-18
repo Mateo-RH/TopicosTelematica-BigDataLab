@@ -3,7 +3,11 @@
 ## Autores
 ![fantasma](https://raw.githubusercontent.com/Mateo-RH/TopicosTelematica-BigDataLab/master/imagenes/trabajo3/sexyFantasma.jpg)
 
-_Juan camilo echeverri salazar_
+_Juan Camilo Echeverri Salazar_
+
+![RH](https://raw.githubusercontent.com/Mateo-RH/TopicosTelematica-BigDataLab/master/imagenes/trabajo3/matejobs.jpg)
+
+_Mateo Ramirez Hernandez_
 
 ### Descripción
 
@@ -16,13 +20,23 @@ Realizar el ejercicio planteado por el profesor, donde se pueda evidenciar el ci
 
 **1. Fuente** Los datos fueron adquiridos de los siguientes links: 
  
- * [Dataset global](https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases) 
- * [Dataset Colombia 1](https://data.humdata.org/dataset/positive-cases-of-covid-19-in-colombia) 
- * [Dataset Colombia 2](https://www.ins.gov.co/Paginas/Inicio.aspx)
+ * [DataSet global](https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases) 
+ * [DataSet Colombia 1](https://data.humdata.org/dataset/positive-cases-of-covid-19-in-colombia) 
+ * [DataSet Colombia 2](https://www.ins.gov.co/Paginas/Inicio.aspx)
  
-**2. Ingesta**
+**2. Ingesta** 
+Los datos adquiridos se almacenaron en un bucket S3 de amazon
+*IMAGEN DEL BUCKET*
 
-**3. Procesamiento**
+**3. Procesamiento** 
+Para el procesamiento se creo un cluster EMR en amazon
+*imagen cluster*
+
+luego creamos un notebook de jupyter asociado a dicho cluster
+*ïmagen notebook*
+
+En el notebook realizamos todo el procesamiento utilizando PySpark.
+La documentacion completa del procesamiento se encuentra en el siguiente (link)[https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/documentos/trabajo3.ipynb]
 
 **4. Aplicacion**
 

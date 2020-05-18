@@ -56,6 +56,12 @@ Despues de realizar el procesamiento de datos exportamos dos nuevos Datasets los
 
 Para el desarrollo de la aplicacion utilizamos el software [Tableu](https://www.tableau.com/es-es).
 
+* [Situacion en Colombia](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/documentos/Colombia.pdf)
+
+* [Situacion a nivel mundial y comparado con Colombia](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/documentos/Mundo.pdf)
+
+Para acceder a las graficas de manera interactiva visite el siguiente [link](https://public.tableau.com/profile/juan.camilo4611#!/).
+
 
 
 [volver](index.md)

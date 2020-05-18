@@ -1,5 +1,14 @@
 # Proyecto big data
 
+### Descripción
+
+Proyecto 3 para la materia topicos de telematica.
+la actividad planteada se describe en el siguiente [link](https://github.com/st0263eafit/bigdata/blob/master/trabajo3-spark-covid19.md).
+
+### Proposito 
+
+Realizar el ejercicio planteado por el profesor, donde se pueda evidenciar el ciclo de vida de big data (Fuente, Ingesta, Procesamiento, Aplicaciones).
+
 ## Autores
 ![fantasma](https://raw.githubusercontent.com/Mateo-RH/TopicosTelematica-BigDataLab/master/imagenes/trabajo3/sexyFantasma.jpg)
 
@@ -12,23 +21,18 @@ _Juan Camilo Echeverri Salazar_
 _Mateo Ramirez Hernandez_
 
 
+## Desarrollo
 
-### Descripción
+**1. Fuente** 
 
-Proyecto 3 para la materia topicos de telematica.
-la actividad planteada se describe en el siguiente [link](https://github.com/st0263eafit/bigdata/blob/master/trabajo3-spark-covid19.md).
-
-### Proposito 
-
-Realizar el ejercicio planteado por el profesor, donde se pueda evidenciar el ciclo de vida de big data (Fuente, Ingesta, Procesamiento, Aplicaciones)
-
-**1. Fuente** Los datos fueron adquiridos de los siguientes links: 
+Los datos fueron adquiridos de los siguientes links: 
  
  * [DataSet global](https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases) 
  * [DataSet Colombia 1](https://data.humdata.org/dataset/positive-cases-of-covid-19-in-colombia) 
  * [DataSet Colombia 2](https://www.ins.gov.co/Paginas/Inicio.aspx)
  
 **2. Ingesta** 
+
 Los datos adquiridos se almacenaron en un bucket S3 de amazon
 ![bucket](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/trabajo3/bucket.PNG?raw=true)
 

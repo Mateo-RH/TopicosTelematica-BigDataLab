@@ -30,14 +30,15 @@ Realizar el ejercicio planteado por el profesor, donde se pueda evidenciar el ci
  
 **2. Ingesta** 
 Los datos adquiridos se almacenaron en un bucket S3 de amazon
-*IMAGEN DEL BUCKET*
+![bucket](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/trabajo3/bucket.PNG?raw=true)
 
 **3. Procesamiento** 
+
 Para el procesamiento se creo un cluster EMR en amazon
-*imagen cluster*
+![notebook](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/trabajo3/notebook.PNG?raw=true)
 
 luego creamos un notebook de jupyter asociado a dicho cluster
-*ïmagen notebook*
+![cluster](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/trabajo3/cluster.PNG?raw=true)
 
 En el notebook realizamos todo el procesamiento utilizando PySpark.
 La documentacion completa del procesamiento se encuentra en el siguiente [link](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/documentos/trabajo3.ipynb)

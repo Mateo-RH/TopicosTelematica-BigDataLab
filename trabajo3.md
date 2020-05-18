@@ -5,9 +5,13 @@
 
 _Juan Camilo Echeverri Salazar_
 
+
+
 ![RH](https://raw.githubusercontent.com/Mateo-RH/TopicosTelematica-BigDataLab/master/imagenes/trabajo3/matejobs.jpg)
 
 _Mateo Ramirez Hernandez_
+
+
 
 ### Descripción
 
@@ -36,21 +40,17 @@ luego creamos un notebook de jupyter asociado a dicho cluster
 *ïmagen notebook*
 
 En el notebook realizamos todo el procesamiento utilizando PySpark.
-La documentacion completa del procesamiento se encuentra en el siguiente (link)[https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/documentos/trabajo3.ipynb]
+La documentacion completa del procesamiento se encuentra en el siguiente [link](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/documentos/trabajo3.ipynb)
 
 **4. Aplicacion**
 
-![2.creoNotebookS3.PNG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/lab4/2.creoNotebookS3.PNG?raw=true)
+Despues de realizar el procesamiento de datos exportamos dos nuevos Datasets los cuales son el resultado del procesamiento previo.
 
-Despues, se cargan los datos de este [Link](https://www.datos.gov.co/Salud-y-Protecci-n-Social/Casos-positivos-de-COVID-19-en-Colombia/gt2j-8ykr/data) al bucket s3 donde estan los datasets
+* [gobal.csv](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/documentos/global.csv)
+* [colombia.csv](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/documentos/colombia.csv)
 
-![1.cargoDatosS3.PNG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/lab4/1.cargoDatosS3.PNG?raw=true)
+Para el desarrollo de la aplicacion utilizamos el software [Tableu](https://www.tableau.com/es-es).
 
-
-## Desarrollo laboratorio
-
-* [Notebook](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/documentos/lab4.ipynb)
-* [datFrame final](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/documentos/lab4.csv)
 
 
 [volver](index.md)

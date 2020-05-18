@@ -1,8 +1,28 @@
-# 4. Spark
+# Proyecto big data
 
-## Prerequisitos
+## Autores
+![fantasma](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/imagenes/trabajo3/sexyFantasma.jpg?raw=true)
 
-Para realizar este laboratorio primero se debe crear un notebook en el cluster y almacenarlo en un bucket S3
+### Descripción
+
+Proyecto 3 para la materia topicos de telematica.
+la actividad planteada se describe en el siguiente [link](https://github.com/st0263eafit/bigdata/blob/master/trabajo3-spark-covid19.md).
+
+### Proposito 
+
+Realizar el ejercicio planteado por el profesor, donde se pueda evidenciar el ciclo de vida de big data (Fuente, Ingesta, Procesamiento, Aplicaciones)
+
+**1. Fuente** Los datos fueron adquiridos de los siguientes links: 
+ 
+ * [Dataset global](https://data.humdata.org/dataset/novel-coronavirus-2019-ncov-cases) 
+ * [Dataset Colombia 1](https://data.humdata.org/dataset/positive-cases-of-covid-19-in-colombia) 
+ * [Dataset Colombia 2](https://www.ins.gov.co/Paginas/Inicio.aspx)
+ 
+**2. Ingesta**
+
+**3. Procesamiento**
+
+**4. Aplicacion**
 
 ![2.creoNotebookS3.PNG](https://github.com/Mateo-RH/TopicosTelematica-BigDataLab/blob/master/imagenes/lab4/2.creoNotebookS3.PNG?raw=true)
 
